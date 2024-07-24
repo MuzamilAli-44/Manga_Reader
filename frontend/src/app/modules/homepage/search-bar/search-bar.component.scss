@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+  left: 78%;
+  top: 12rem;
+  width: 20%;
+  z-index: 1000; 
+  
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1100; 
+
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.results {
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14rem; 
+  overflow-y: auto; 
+  height: calc(90vh - 14rem); 
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.book-tile {
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.results p.no-results {
+  font-size: 1.6em;
+  color: white;
+  text-align: center;
+}
