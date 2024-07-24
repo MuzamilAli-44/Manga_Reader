@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px; /* Adjust font size as needed */
+    color: white; /* Font color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+.main_heading {
+    position: fixed;
+    width: 100%;
+    text-align: center; /* Centers the heading horizontally */
+    margin-top: 5px; /* Adjust the margin as needed */
+}
+
+// .header {
+//     text-align: center; /* Centers the heading horizontally */
+//     margin-top: 20px; /* Adjust the margin as needed */
+//   }
+  
+//   .page-title {
+//     font-size: 36px; /* Adjust font size as needed */
+//     color: white; /* Font color */
+//     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
+//     margin: 0; /* Remove default margin */
+//     padding: 20px 0; /* Add padding for spacing */
+//   }

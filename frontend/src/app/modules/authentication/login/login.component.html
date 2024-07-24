@@ -1,0 +1,51 @@
+<div class="container">
+  <h1>Login</h1>
+
+  <form
+    style="background-color: #7ba5d2"
+    #loginForm="ngForm"
+    (ngSubmit)="onSubmit(loginForm)"
+  >
+    <div>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        required
+        id="email"
+        pattern=".+@gmail\.com"
+        #emailCtrl="ngModel"
+      />
+      <div *ngIf="emailCtrl.invalid && emailCtrl.touched" class="error">
+        Email must be a &#64;gmail.com address.
+      </div>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <div class="password-input">
+        <input
+          [type]="hidePassword ? 'password' : 'text'"
+          [(ngModel)]="password"
+          name="password"
+          required
+          id="password"
+        />
+        <img
+          [src]="
+            hidePassword ? 'assets/eyeOpenSVG.svg' : 'assets/eyeCloseSVG.svg'
+          "
+          alt="Toggle Password Visibility"
+          class="immg"
+          (click)="togglePasswordVisibility()"
+        />
+      </div>
+    </div>
+    <button class="button" type="submit" [disabled]="!loginForm.valid">
+      Login
+    </button>
+    <button class="buttons" (click)="navigateToUrl($event, 'register')">
+      Don't have an account? Sign Up
+    </button>
+  </form>
+</div>
